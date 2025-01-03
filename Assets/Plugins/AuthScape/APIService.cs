@@ -5,6 +5,7 @@ using System.Collections;
 using Assets.Plugins.Models;
 using Assets.Plugins.AuthScape.Models;
 using TMPro;
+using Unity.VisualScripting;
 
 public class AuthScapeAPIService : APIBase
 {
@@ -127,7 +128,38 @@ public class AuthScapeAPIService : APIBase
 
         }, (launcherUri) =>
         {
-            System.Diagnostics.Process.Start(launcherUri);
+
+            #if UNITY_EDITOR
+                System.Diagnostics.Process.Start(launcherUri);
+            #elif UNITY_ANDROID
+                // Code specific to Android
+                Application.OpenURL(launcherUri);
+            #elif UNITY_IOS
+                // Code specific to iOS
+                Application.OpenURL(launcherUri);
+            #elif UNITY_STANDALONE_WIN
+                // Code specific to Windows
+                System.Diagnostics.Process.Start(launcherUri);
+            #elif UNITY_STANDALONE_OSX
+                // Code specific to macOS
+                System.Diagnostics.Process.Start(launcherUri);
+            #elif UNITY_STANDALONE_LINUX
+                // Code specific to Linux
+                System.Diagnostics.Process.Start(launcherUri);
+            #elif UNITY_WEBGL
+                // Code specific to WebGL
+                Application.ExternalEval($"window.open('{url}','_blank')");
+            #else
+                // Fallback code
+                System.Diagnostics.Process.Start(launcherUri);
+            #endif
+
+
+
+
+
+
+
         });
     }
 

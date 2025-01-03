@@ -1,0 +1,5 @@
+C:/Development/AuthScape/AuthScape.Unity/.utmp/RelWithDebInfo/591a1k4m/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Development/AuthScape/AuthScape.Unity/.utmp/RelWithDebInfo/591a1k4m/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Development/AuthScape/AuthScape.Unity/.utmp/RelWithDebInfo/591a1k4m/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Development/AuthScape/AuthScape.Unity/.utmp/RelWithDebInfo/591a1k4m/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Development/AuthScape/AuthScape.Unity/.utmp/RelWithDebInfo/591a1k4m/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
